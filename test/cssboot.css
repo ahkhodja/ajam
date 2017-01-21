@@ -1,0 +1,35 @@
+@import url("../webfonts/Quicksand_Bold/stylesheet.css");
+
+body {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.col-sm-3 .col-sm-12 #detaille {
+}
+.container-fluid .col-xs-3 .col-sm-12 {
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-left: 0px;
+}
+#data_wrapper.dataTables_wrapper
+{
+     height: 700px !important;
+     background-color: #F1F1F1 !important;
+}
+#data_wrapper .fg-toolbar.ui-toolbar.ui-widget-header.ui-helper-clearfix.ui-corner-bl.ui-corner-br
+{
+       position: absolute;
+       width: 100%;
+       bottom: 0;
+}.container-fluid .col-xs-9 {
+	padding-left: 0px;
+}
+.col-sm-12 #detaille #info {
+	width: 100px;
+	height: 100px;
+	float: right;
+	display: inline;
+}
