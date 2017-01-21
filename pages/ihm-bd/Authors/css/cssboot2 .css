@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+body {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Montserrat";
+}
+
+
+.col-sm-3 .col-sm-12 #detaille {
+}
+.container-fluid .col-xs-3 .col-sm-12 {
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-left: 0px;
+}
+#data_wrapper.dataTables_wrapper
+{
+     height: 700px !important;
+     background-color: #F1F1F1 !important;
+}
+#data_wrapper .fg-toolbar.ui-toolbar.ui-widget-header.ui-helper-clearfix.ui-corner-bl.ui-corner-br
+{
+       position: absolute;
+       width: 100%;
+       bottom: 0;
+}.container-fluid .col-xs-9 {
+	padding-left: 0px;
+}
+.col-sm-12 #detaille #info {
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: inline;
+}
+.container-fluid .col-xs-9 #chargement {
+	width: 70px;
+	height: 70px;
+	margin-top: 30%;
+	margin-left: 40%;
+}
+#table_contenu .panel  {
+	margin-top:10%
+}
+footer .panel {
+  background-color: #A7A7A7;
+  border-radius: 8px;
+  padding-bottom: 5px;
+ 
+}
+.container-fluid .row.col-sm-12 {
+	padding-right: 12px;
+	margin-left:0px;
+	margin-right:0px;
+}
+.nav.navbar-nav.menu li:hover {
+	background-color: #1F18C0;
+	background-color: #1F18C0;
+	border-bottom: 3px solid #231CCB;
+}
+.nav.navbar-nav.menu  .active
+ {
+	background-color: #1F18C0;
+	border-bottom: 3px solid #231CCB;
+}

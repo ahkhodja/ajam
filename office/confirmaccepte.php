@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>AJAM |Editor office  </title>
+		<link rel="stylesheet" href="css/personel_space.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<div id="navbar">
+<div class="h_left">
+					<ul>
+      	  				<li><a href="editor_home.html"><h2>Home</h2></a></li>
+        				<li class="active"><a href="#"><h2>Articles</h2></a>
+                            <ul>
+								<li><a href="papers_list.html">Submitted Articles </a></li>
+            					<li><a href="assign_to-editor.html">Assign to Editor</a></li>
+								<li><a href="track_paper.html">Track Articles</a></li>
+          					</ul>
+                        </li>
+        													
+        				<li><a href="#"><h2>About</h2></a>
+							<ul>
+            					<li><a href="about_journal.html">The journal</a></li>
+            					<li><a href="ethical_guidelines.html">Ethical Guidelines</a></li>
+								<li><a href="editor_support.html">Site Support</a></li>
+          					</ul>
+						</li>
+      				</ul>
+					</div>
+<div class="h_right">
+<li class="h_right">
+	<a href="#">
+		<img src="profil.png"  width="26px" height="26px">
+	</a>
+	<ul>
+    	<li><a href="account_informations.html">Change details</a></li>
+    	<li><a href="login.html">Logout</a></li>
+    </ul>
+</li>
+</div>
+</div>
+</div>
+<div id="forme">
+<h2 class="div-title">Confirmation</h2>
+</div>
+<div id="forme">
+
+<fieldset>
+<p><h2></h2></p>
+</fieldset>
+<br/>
+<br/>
+</div>
+
+</body>
+
+     <!-- --------------------------------------------------------- Footer----------------------------------------------------------------- -->
+  <div id="footer">
+    <p>copyright &copy; 2015 - All Rights Reserved - <a href="http://www.csc.dz">(CSC)</a></p>
+    
+  </div>
+   <!-- ---------------------------------------------------------end footer----------------------------------------------------------------- -->
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+#navbar{
+	display:block; 
+	float:right; 
+	margin:30px 0 0 0; 
+	padding:0; 
+	list-style:none; 
+	font-size:12px; 
+	font-weight:normal;
+	font-family:montserrat, arial, verdana, Helvetica, sans-serif;
+}
+#navbar ul, #navbar li{
+	float:left;
+	list-style:none;
+	width:auto;
+	margin:0; padding:0;
+	
+}
+#navbar li a:link, #navbar li a:visited, #navbar li a:hover{
+	display: block;
+	margin: 0;
+	background:#333333;
+	/*background:#4173B8;
+*/
+	padding: 15px 20px;
+	color: #ffffff;
+	
+}
+#navbar ul ul li a:link, #navbar ul ul li a:visited{
+	border:none;
+}
+
+#navbar li a:hover, #navbar ul li.active a{
+	color: #ffffff;
+	background-color: #1a548e;
+	
+}
+#navbar li li a:link, #navbar li li a:visited{
+	width: 200px;
+	height:21px;
+	float: none;
+	margin: 0;
+	padding: 7px 10px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #ffffff;
+	background-color: #333333;
+}
+#navbar li li a:hover{ /*liste des items du menu*/
+	color: #ffffff;
+	background-color: #1a548e;
+	
+}
+#navbar li ul{
+	z-index:9999; 
+	position:absolute; 
+	left:-999em; 
+	height:auto; 
+	width:170px;
+	border-left:1px solid #CCCCCC; 
+	border-bottom:1px solid #CCCCCC;
+}
+#navbar li ul a{width:140px;}
+#navbar li ul ul{margin:-32px 0 -32px 0;}
+#navbar li:hover ul ul{left:-999em;}
+#navbar li:hover ul, #navbar li li:hover ul{left:auto;}
+#navbar li:hover{position:static;}
+#navbar li.last a{margin-right:0;}
+

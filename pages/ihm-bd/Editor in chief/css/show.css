@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+body {
+    background-color: #ECF0F5;
+    font-family: "Montserrat";
+    font-weight: 300;
+    min-height: 100%;
+	
+}
+optgroup
+{
+    display: inline-block;
+}
+.logo{
+    background-color: #357CA5;
+    height: 50px;
+    line-height:2.2;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family:Montserrat;
+}
+.bn
+{
+    background-color: #3C8DBC;
+    height: 50px;
+}
+.menu{
+
+
+    background-color: #222d32;
+    padding: 0;
+    margin: 0;
+}
+.profile{
+    height: 100px;
+    background-color: #222d32;
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    line-height:6;
+
+}
+.choix{min-height: 100%;
+    padding-left: 0px;
+    margin: 0;
+    list-style: none;
+    color: #8fb6c2;
+
+}
+.titre{
+    color: #4b646f;
+    height: 37px;
+    background-color: #1A2226;
+    padding: 0;
+    margin: 0;
+    line-height:2.5;
+
+}
+.s_menu{
+    padding-left: 10px;
+}
+.text-titre{
+    padding-left: 15%;
+}
+li a:link{
+    text-decoration:none;
+    color:#8fb6c2 ;
+}
+li a{
+    text-decoration:none;
+    color:#8fb6c2 ;
+}
+li a:hover{
+    text-decoration:none;
+    color:#8fb6c2 ;
+}
+.choix .s_menu:hover{
+    padding-left: 5px;
+    background-color:#1E282C;
+    border-left: 5px solid;
+}
+.choix .selected{
+    padding-left: 5px;
+    border-left: 5px solid;
+    border-left-color: #0066cc;
+}
+#profile{
+    float: left;
+}
+.texte{
+	color: #000000;
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 200;
+	font-size: small;
+	text-align: justify;
+}
+.texttt
+{
+    font-size: small;
+
+}
+.info_bar{
+    padding: 2px;
+}
+.contenu_bar{
+    padding-left: 25px;
+}
+.texte_legend{
+    font-size: medium;
+}
+.text_desion{
+ padding-top: 10px;
+}
+.panel_perso{
+    border-radius: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 2px;
+}
+.head_perso{
+    border-radius: 0px;
+    padding: 0px;
+}
+.liste_perso{
+    padding: 2px;
+    color:inherit;
+    border: 0px;
+}
+.panel-info > .panel-heading {
+    background-color: #3C8DBC;
+    border-color:#FFFFFF ;
+    color: #FFFFFF;
+}
+.list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+.panel-info {
+    border-color: #3C8DBC;
+}
+.panel{
+    margin-bottom: 0px;
+}

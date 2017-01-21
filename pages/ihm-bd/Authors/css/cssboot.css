@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+	font-family: "Montserrat";
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1300px;
+
+}
+
+
+.col-sm-3 .col-sm-12 #detaille {
+}
+.container-fluid .col-xs-3 .col-sm-12 {
+	padding-left: 0px;
+	padding-right: 20px;
+	padding-top: 0px;
+}
+#data_wrapper.dataTables_wrapper
+{
+     background-color: #F1F1F1 !important;
+     height: 700px !important;
+}
+#data_wrapper .fg-toolbar.ui-toolbar.ui-widget-header.ui-helper-clearfix.ui-corner-bl.ui-corner-br
+{
+       bottom: 0;
+       position: absolute;
+       width: 100%;
+}.container-fluid .col-xs-9 {
+	padding-left: 0px;
+}
+.col-sm-12 #detaille #info {
+	display: inline;
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+.container-fluid .col-xs-9 #chargement {
+	height: 100px;
+	margin-left: 40%;
+	margin-top: 20%;
+	width: 100px;
+}
+#table_contenu .panel  {
+	margin-top:10%
+}
+footer .panel {
+  background-color: #A7A7A7;
+  border-radius: 8px;
+  padding-bottom: 5px;
+ 
+}
+.container-fluid .row.col-sm-12 {
+	margin-left:0px;
+	margin-right:0px;
+	padding-right: 12px;
+}
+.col-xs-3 .col-sm-12 #detaille {
+	height: 80px;
+	padding-left: 6px;
+}
+.nav.navbar-nav li:hover {
+	background-color: #1F18C0;
+	border-bottom: 5px solid #231CCB;
+}
+.nav.navbar-nav  .active
+ {
+	background-color: #1F18C0;
+	border-bottom: 5px solid #231CCB;
+}
+.im{
+	margin-left: 30%;
+}
+.milieu{
+	line-height:3;
+}
+.pr{
+	height: 33px;
+	line-height: 2;
+	margin-left: 10px;
+
+}
+.add{
+	padding-left: 0px;
+}
+.state{
+	height: 6px;
+    min-height: 6px;
+}
+.state_p{
+    border-radius: 0px;
+    height: 6px;
+}
+#state_progresse{
+    background-color: #231CCB;
+}
+

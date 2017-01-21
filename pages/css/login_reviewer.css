@@ -1,0 +1,245 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+* {margin: 0; padding: 0;}
+
+html {
+	
+	background: #ffffff;
+	
+
+}
+
+body {
+
+	font-family: montserrat, arial, verdana;
+	height:100%;
+	background-color:#000;
+	opacity:0.6;
+	
+}
+/*form styles*/
+
+#forme {
+	display:block; 
+	margin:30px auto;
+	width: 960px;
+	text-align: center;
+	position: relative;
+}
+
+/*-------------------------------------------------------------header-----------------------------------------*/
+#header{
+	display:block; 
+	margin:0; 
+	padding:0; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:10px; 
+	width: 100%;
+	height: 50px;
+	background:#000000;
+	opacity: 0.6;
+}
+
+#navbar{
+	display:block; 
+	margin:0 auto;
+	width: 940px;
+	height: inherit;
+}
+#navbar .h_right{
+	display:block;
+	width:50px;
+	height: 50px;
+	float:right; 
+	margin:10px;
+	
+	
+
+}
+#navbar .h_left{
+	display:block;
+	float:left; 
+	margin:10px; 
+	width:700px; 
+	
+}
+#navbar li{
+	width:100px;
+	margin: 0 10px;
+	padding:5px 10px 0 10px; 
+	float:left;
+}
+#navbar li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#navbar li a:hover, #navbar ul li.active a{
+	color: #F96E10;
+}
+
+#navbar li ul li a:hover{ /*liste des items du menu*/
+	color: #000000;
+	background-color: #ffffff;
+	
+}
+#navbar li ul {
+	position:absolute; 
+	left:-999em; 
+	height:auto; 
+	width:180px;
+	padding:5px;
+	font-size: 13px;
+	font-weight: normal;
+	margin:0;
+	background-color: #000000;
+	border-left:1px solid #F96E10; 
+	border-bottom:1px solid #F96E10;
+}
+#navbar li ul li {
+	width:150px;
+	height:20px;
+	magin:0 0 0 0;
+	color: #ffffff;
+	background-color: #000000;
+	
+}
+#navbar li:hover ul, #navbar li li:hover ul{left:auto;}
+
+/*--------------------------------------------end header---------------------------------------------*/
+
+#footer {
+	width: 100%;
+	height: 60px;
+	background:#000000;
+	margin:20% 0 0 0;
+	opacity: 0.5;
+	text-align: center;
+}
+
+
+#footer p{
+	padding: 20px;
+	font-size: 12px;
+	color:#ffffff;
+}
+#tableau{width:90%; margin:10px 0 10px 4%; border-collapse:collapse; table-layout:auto; vertical-align:top; margin-bottom:15px; border:1px solid #CCCCCC;}
+#tableau thead th{color:#FFFFFF; background-color:#1E80CC; border:1px solid #CCCCCC; border-collapse:collapse; text-align:center; table-layout:auto; vertical-align:middle;}
+#tableau tbody td{vertical-align:top; border-collapse:collapse; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;}
+#tableau thead th, table tbody td{padding:5px; border-collapse:collapse;}
+#tableau tbody tr.light{color:#666666; background-color:#F7F7F7;}
+#tableau tbody tr.dark{color:#666666; background-color:#E8E8E8;}
+
+
+#abstract{
+	width: 100%;
+	height: 200px;
+	margin:0;
+	padding:0;
+	
+}
+#abstract p{
+font-size: 12px;
+}
+#forme fieldset {
+	background: #f7f7f7;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px ;
+	box-sizing: border-box;
+	width: 900px;
+	/*height: auto;*/
+	margin: 5% 2%;
+	
+}
+/*Hide all except first div*/
+#forme fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#forme input, #forme textarea, #forme  select{
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 80%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#forme .action-button {
+	width: 100px;
+	background: #1E80CC;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#forme .action-button:hover, #forme .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #1E90FF
+}
+/*headings*/
+.div-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.div-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin: 30px 0 50px 0;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	color:#000000;
+	font-size: 14px;
+	width: 25%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 40px;
+	line-height: 40px;
+	display: block;
+	font-size: 16px;
+	color: #333;
+	background: white;
+	border:1px solid #FF7F50;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+	/*margin: 0 40px 5px 0;*/
+}
+
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #FF7F50;
+	color: white;
+}
+
+
+

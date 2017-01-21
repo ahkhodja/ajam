@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+
+* {margin: 0; padding: 0;}
+
+html {
+	background-color: #ffffff;
+	background-image: url(../images/bg.png);
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;	/*-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  /*background-size: cover; /* version standardisée */
+}
+
+body {
+	font-family: Quicksand, arial, verdana;
+	height:100%;
+}
+
+
+#forme {
+	margin:50px auto;
+	max-width: 960px;
+	text-align: center;
+}
+#forme input, #forme  select{
+	padding: 5px;
+	border: 1px solid #686F9C;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family: Quicksand;
+	color: #2C3E50;
+	background:#ffffff;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------------header-----------------------------------------*/
+#header{
+	display:block; 
+	margin:0; 
+	padding:0; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:10px; 
+	width: 100%;
+	height: 50px;
+	background:#000000;
+	opacity: 0.6;
+}
+
+#navbar{
+	display:block; 
+	margin:0 auto;
+	width: 940px;
+	height: inherit;
+}
+#navbar .h_right{
+	display:block;
+	width:50px;
+	height: 50px;
+	float:right; 
+	margin:10px;
+}
+#navbar .h_right li ul {
+	/*position:absolute; */
+	left:-999em; 
+	height:auto; 
+	width:140px;
+	padding:5px;
+	font-size: 13px;
+	font-weight: bold;
+	margin:0;
+	background-color: #000000;
+	border-bottom:1px solid #F96E10;
+}
+#navbar .h_right li{
+	width:100px;
+	margin: 0 5px;
+	padding:5px 10px 0 10px; 
+}
+#navbar .h_right li a{
+	margin:5px 0;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#navbar .h_right li a:hover, #navbar .h_right ul li.active a{
+	color: #F96E10;
+}
+
+#navbar .h_right li ul li a:hover{ /*liste des items du menu*/
+	float:right;
+	color: #000000;
+	background-color: #ffffff;
+	
+}
+#navbar .h_right li ul li {
+	width:auto;
+	height:20px;
+	color: #ffffff;
+	background-color: #000000;
+	
+}
+#navbar .h_right li:hover ul, #navbar .h_right li li:hover ul{right:auto;}
+
+#navbar .h_left{
+	display:block;
+	float:left; 
+	margin:10px; 
+	width:700px; 
+	
+}
+#navbar li{
+	width:100px;
+	margin: 0 10px;
+	padding:5px 10px 0 10px; 
+	float:left;
+}
+#navbar li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#navbar li a:hover, #navbar ul li.active a{
+	color: #F96E10;
+}
+
+#navbar li ul li a:hover{ /*liste des items du menu*/
+	color: #000000;
+	background-color: #ffffff;
+	
+}
+#navbar li ul {
+	position:absolute; 
+	left:-999em; 
+	height:auto; 
+	width:200px;
+	padding:5px;
+	font-size: 13px;
+	font-weight: bold;
+	margin:0;
+	background-color: #000000;
+	border-left:1px solid #F96E10; 
+	border-bottom:1px solid #F96E10;
+}
+#navbar li ul li {
+	width:auto;
+	height:20px;
+	color: #ffffff;
+	background-color: #000000;
+	
+}
+#navbar li:hover ul, #navbar li li:hover ul{left:auto;}
+
+/*--------------------------------------------end header---------------------------------------------*/
+
+#footer {
+	width: 100%;
+	height: 60px;
+	background: #000000;
+	margin-top: 10px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	opacity: 0.5;
+	text-align: center;
+}
+
+
+#footer p{
+	padding: 20px;
+	font-size: 12px;
+	color:#ffffff;
+}
+#tableau{max-width:960px; width:90%; margin:10px 0 10px 4%; border-collapse:collapse; table-layout:auto; vertical-align:top; margin-bottom:15px; border:1px solid #CCCCCC;}
+#tableau thead th{color:#FFFFFF; background-color:#1E80CC; border:1px solid #CCCCCC; border-collapse:collapse; text-align:center; table-layout:auto; vertical-align:middle;}
+#tableau tbody td{vertical-align:top; border-collapse:collapse; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;}
+#tableau thead th, table tbody td{padding:5px; border-collapse:collapse;}
+#tableau tbody tr.light{color:#666666; background-color:#F7F7F7;}
+#tableau tbody tr.dark{color:#666666; background-color:#E8E8E8;}
+#table{width:60%; margin:10px auto; margin-bottom:15px; }
+
+#forme fieldset {
+	background: #f7f7f7;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px ;
+	box-sizing: border-box;
+	width: 95%;
+	/*height: auto;*/
+	margin: 5% 2%;
+	
+}
+#forme fieldset h2 {
+	color:#1E80CC;
+	font-size:14px; 
+	margin:10px 0; 
+	font-weight:normal; 
+	line-height:1.6em;
+}
+
+#forme fieldset h1 {
+	font-size:18px; 
+	margin:10px 0; 
+	font-weight:bold; 
+	line-height:1.6em;
+}
+
+#forme .border{
+	background: #f7f7f7;
+	margin:auto;
+	width:70%;
+	border:1px solid #cccccc; 
+	border-radius: 5px;
+	box-sizing: border-box;
+	
+	
+}
+/*buttons*/
+#forme .action-button {
+	width: 100px;
+	background: #1E80CC;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#forme .action-button:hover, #forme .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #1E90FF
+}
+/*headings*/
+.div-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.div-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+#contents{
+	font-family: "Helvetica ",Arial,sans-serif;
+	margin:30px auto;
+	max-width: 960px;
+	text-align: justify;
+	line-height:1.6em;
+	font-weight:normal;
+}
+#contents  h2{margin:10px 0; font-weight:bold; line-height:1.6em;}
+#contents .topics span{font-size:16px; margin:15px 0;}
+
+#menu_liste ul{
+	padding:10px 20px 10px;
+	list-style:none;
+	border-bottom:1px dotted #1E80CC; 
+}
+*  a{
+	color:#1E80CC;
+	text-decoration:none;
+}
+
+#back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #222;  
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  z-index: 100;
+  display: none;
+  
+}
+.fa:before{
+	font-size: 2em;
+	display: inline-block;
+	color: #fff;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	content: "\f106";
+}
+.form .menu .titre_menu {
+	padding-left: 10px;
+}

@@ -1,0 +1,46 @@
+#contenu .partie:not(:first-of-type) {
+    display: none;
+}.panel.panel-info .list-group .list-group-item.encours {
+	color: #000000;
+}
+footer{
+
+    margin-top: 10px;
+}
+#co1{min-height: 50px;}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.bar{
+    margin-bottom: 0px;
+
+}
+.progress{
+    height: 33px;
+}
+.btn_smal{
+   padding: 1px 7px;
+}
+.texte{
+	color: #4D4B4B;
+	font-family: roboto;
+	font-style: normal;
+	font-weight: 400;
+}
