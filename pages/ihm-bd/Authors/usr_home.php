@@ -214,7 +214,7 @@ if(isset($_GET['e'])&&(!empty($_GET['e']))) {}
             		<i class ="fa  fa-inbox fa-2x "></i>	  &nbsp;Inbox
              		 
             		</a>
-                    <a href="#"  class="list-group-item liste_perso" id="contact">
+                    <a href="php/cantact_.php"  class="list-group-item liste_perso" id="contact">
             			  <i class ="fa  fa-envelope fa-2x "></i>&nbsp;Contact us
              		 
             		</a>
@@ -262,69 +262,6 @@ $(document).ready(function() {
 		"lengthChange": false,
 		"iDisplayLength": 10
 	} );
-
-
-	
-	
-	
-	
-	
-	
-	$("#contact").click(function(){
-	
-	$("#table_contenu").remove();
-		  
-		$("#chargement").show();
-	$.ajax({
-		type:"POST",
-		url:"php/cantact.php",
-		success:function(data)
-								{
-									$("#chargement").hide();
-									
-									$("#contenu").append(data);
-						$('#envoyer').on('click', function(e) {
-							
-							 textarea=$('#textarea').val();
-							 title =$('#text').val();
-							e.stopPropagation(e);
-							$("#table_contenu").remove();
-							$("#chargement").show();
-							$.ajax({
-								
-								
-								type:"POST",
-								url:"php/envoi_msg.php",
-								data: {id:ident,msg:textarea,title:title },async:false,
-								success:function(data)
-								{
-									$("#chargement").hide();
-									
-									$("#contenu").append(data);
-									
-									
-									
-
-
-
-									}});
-							
-							
-							
-							 return false;
-							 
-							 
-							 
-							 
-							 
-
-});
-}
-		
-		});
-	});
-
-
 
 $('ul li a').click(
 
