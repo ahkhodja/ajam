@@ -719,7 +719,7 @@ $select_etat = $conn->query("SELECT id, etat,file, DATE_FORMAT(date, '%d %M') as
 
                     type:"POST",
                     url:"add_rev.php",
-                    data: data_sub,async:false,
+                    data: data_sub,async:true,
                     success:function(data)
                     {
                         location.reload(true);
@@ -740,7 +740,7 @@ $select_etat = $conn->query("SELECT id, etat,file, DATE_FORMAT(date, '%d %M') as
 
                     type:"POST",
                     url:"../decision/d_dec_ref_sub.php",
-                    data: data_sub,async:false,
+                    data: data_sub,async:true,
                     success:function(data)
                     {
                         if(data == 1)

@@ -746,7 +746,7 @@ $select_decision=$conn->query("SELECT id,decision,type,date FROM decision WHERE 
 
                 type:"POST",
                 url:"../decision/d_dec_revision.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
                     if(data==1){
@@ -770,7 +770,7 @@ $select_decision=$conn->query("SELECT id,decision,type,date FROM decision WHERE 
 
                 type:"POST",
                 url:"ref.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 
@@ -793,7 +793,7 @@ $select_decision=$conn->query("SELECT id,decision,type,date FROM decision WHERE 
 
                 type:"POST",
                 url:"../decision/d_dec_acc.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 

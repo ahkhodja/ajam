@@ -916,7 +916,7 @@ $select_decision = $conn->query("SELECT id,decision,type,date FROM decision WHER
 
                     type:"POST",
                     url:"r1_add_rev.php",
-                    data: data_sub,async:false,
+                    data: data_sub,async:true,
                     success:function(data)
                     {
                         location.reload(true);
@@ -937,7 +937,7 @@ $select_decision = $conn->query("SELECT id,decision,type,date FROM decision WHER
 
                     type:"POST",
                     url:"decision/r1_dec_ref_sub.php",
-                    data: data_sub,async:false,
+                    data: data_sub,async:true,
                     success:function(data)
                     {
                         if(data == 1)

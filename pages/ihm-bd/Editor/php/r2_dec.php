@@ -1035,7 +1035,7 @@ $select_etat = $conn->query("SELECT id, etat,file, DATE_FORMAT(date, '%d %M') as
 
                 type:"POST",
                 url:"../decision/r2_dec_ref.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 
@@ -1058,7 +1058,7 @@ $select_etat = $conn->query("SELECT id, etat,file, DATE_FORMAT(date, '%d %M') as
 
                 type:"POST",
                 url:"../decision/r2_dec_acc.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 

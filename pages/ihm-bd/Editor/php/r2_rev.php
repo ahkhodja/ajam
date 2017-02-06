@@ -995,7 +995,7 @@ $select_etat = $conn->query("SELECT id, etat,file, DATE_FORMAT(date, '%d %M') as
 
                 type:"POST",
                 url:"r2_add_rev.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
                     if(data==1){

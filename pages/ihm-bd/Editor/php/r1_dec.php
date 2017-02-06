@@ -904,7 +904,7 @@ if($row_decision['type']=="Revision 2"){$desision=false;}
 
                 type:"POST",
                 url:"../decision/r1_dec_revision.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
                     if(data==1){
@@ -928,7 +928,7 @@ if($row_decision['type']=="Revision 2"){$desision=false;}
 
                 type:"POST",
                 url:"../decision/r1_dec_ref.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 
@@ -951,7 +951,7 @@ if($row_decision['type']=="Revision 2"){$desision=false;}
 
                 type:"POST",
                 url:"../decision/r1_dec_acc.php",
-                data: data_sub,async:false,
+                data: data_sub,async:true,
                 success:function(data)
                 {
 
