@@ -9,7 +9,7 @@ if($select){
 	<div id="table_contenu">
 	
 	<h2>Confirmation</h2>
-<p class = "lead">Updated succefuly</p>
+<p class = "lead">Updated successfully</p>
 	
 	
 	

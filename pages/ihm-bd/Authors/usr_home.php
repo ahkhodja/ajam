@@ -105,6 +105,7 @@ if(isset($_GET['e'])&&(!empty($_GET['e']))) {
 
 
 }
+if(isset($_GET['e'])&&(!empty($_GET['e']))) {}
 
 
 ?>
@@ -209,7 +210,7 @@ if(isset($_GET['e'])&&(!empty($_GET['e']))) {
            				 <h3 class="panel-title im"><i class ="fa  fa-envelope fa-1x "></i>&nbsp;MESSAGES</h3>
           			</div>
         		<div class="list-group">
-           			 <a href="#" class="list-group-item liste_perso" id="inbox">
+           			 <a href="php/inbox.php" class="list-group-item liste_perso" id="inbox">
             		<i class ="fa  fa-inbox fa-2x "></i>	  &nbsp;Inbox
              		 
             		</a>
@@ -222,7 +223,7 @@ if(isset($_GET['e'])&&(!empty($_GET['e']))) {
                 <div class="panel-heading head_perso">
            				 <h3 class="panel-title im"><i class ="fa fa-user fa-1x"></i>&nbsp;PROFILE</h3>
           		</div>
-                <a href="#" class="list-group-item liste_perso" id="edit">
+                <a href="php/edit_pr.php" class="list-group-item liste_perso" id="edit">
             			<i class ="fa  fa-edit fa-2x "></i>&nbsp; Edit Informations
              		 
             		</a>
@@ -262,30 +263,7 @@ $(document).ready(function() {
 		"iDisplayLength": 10
 	} );
 
-	$("#inbox").click(function(){
-		
-		$("#table_contenu").remove();
-		  
-		$("#chargement").show();
-		$.ajax({
-								
-								
-								type:"POST",
-								url:"php/res_inbox.php",
-								data: {id:ident },async:false,
-								success:function(data)
-								{
-									$("#chargement").hide();
-									
-									$("#contenu").append(data);
-									
-									
-									//$('#table').DataTable();
 
-
-
-									}});
-		});
 	
 	
 	
@@ -346,74 +324,8 @@ $(document).ready(function() {
 		});
 	});
 
-$("#edit").click(function(){
-		
-		$("#table_contenu").remove();
-		  
-		$("#chargement").show();
-		$.ajax({
-								
-								
-								type:"POST",
-								url:"php/edit_profile.php",
-								data: {id:ident },async:false,
-								success:function(data)
-								{
-									$("#chargement").hide();
-									
-									$("#contenu").append(data);
-									
-									$('#submit-edit').on('click', function(e) {
-										e.stopPropagation(e);
-										affiliation=$('#affiliation').val();
-										$.ajax({
-								type:"POST",
-								url:"php/update_profile.php",
-								data: {affiliation:affiliation,adresse:$('#adresse').val(),city:$('#city').val(),state:$('#state').val(),contry:$('#contry').val(),pcode:$('#pcode').val(),Phone:$('#Phone').val(),fax:$('#fax').val() },async:false,
-								success:function(data)
-								{
-									$("#table_contenu").remove();
-									$("#contenu").append(data);
-									
-									}});return false;
-										
-										
-										
-										
-										});
-									
 
 
-
-									}});
-		});
-		$('.lien1').on('click', function(e) {
-										e.stopPropagation();
-										$("#table_contenu").remove();
-		  
-										$("#chargement").show();
-									id=parseInt($('td:nth-child(1)',$(this).closest('tr')).text());
-									$.ajax({
-								
-								
-								type:"POST",
-								url:"php/detaille_track.php",
-								data: {id:id },async:false,
-								success:function(data)
-								{
-									$("#chargement").hide();
-									
-									$("#contenu").append(data);
-									
-									
-									
-
-
-
-									}});	
-										
- return false;
-});
 $('ul li a').click(
 
 			function() {
